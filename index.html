@@ -12,22 +12,22 @@
             <nav class="page-navigation">
                 <ul class="page-navigation__items">
                     <li class="page-navigation__item">
-                        <a href="#home">Home</a>
+                        <a class="page-navigation__link" href="#home">Home</a>
                     </li>
                     <li class="page-navigation__item">
-                        <a href="#about">About</a>
+                        <a class="page-navigation__link" href="#about">About</a>
                     </li>
                     <li class="page-navigation__item">
-                        <a href="#concerts">Concerts</a>
+                        <a class="page-navigation__link" href="#concerts">Concerts</a>
                     </li>
                     <li class="page-navigation__item">
-                        <a href="#video">Video</a>
+                        <a class="page-navigation__link" href="#video">Video</a>
                     </li>
                     <li class="page-navigation__item">
-                        <a href="#photos">Photos</a>
+                        <a class="page-navigation__link" href="#photos">Photos</a>
                     </li>
                     <li class="page-navigation__item">
-                        <a href="#contact">Contact</a>
+                        <a class="page-navigation__link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -80,8 +80,8 @@
             </section>
             <section id="about" class="content-section about-section">
                 <h2 class="content-section__header">About</h2>
-                <img src="./images/band01.jpg" alt="Image of band members standing at the construction site" />
-                <div class="about-section__desc">
+                <img class="about-section__image" src="./images/band01.jpg" alt="Image of band members standing at the construction site" />
+                <article class="about-section__desc">
                     <h3 class="about-section__desc-header">Straight from Lublin</h3>
                     <p class="about-section__desc-details">
                         6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock.<br/>
@@ -89,7 +89,7 @@
                         They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass.<br/>
                         As for now they released their debut EP - TRINITY and they started working on their first full length album.
                     </p>
-                </div>
+                </article>
             </section>
             <section id="concerts" class="content-section">
                 <h2 class="content-section__header">Concerts</h2>
@@ -97,33 +97,49 @@
                     <article class="concerts__item">
                         <img class="concerts__image" src="./images/band02_WiechnikMarcin.jpg" alt="Image of band drummer during a concert" />
                         <header class="concerts__info">
-                            <p class="concerts__date">20.12.2018</p>
-                            <p class="concerts__location">Lublin, klub XXX</p>
-                            <button class="button">Buy a ticket</button>
+                            <div class="concerts__date-wrapper">
+                                <p class="concerts__date">20.12.2018</p>
+                                <p class="concerts__location">Lublin, klub XXX</p>
+                            </div>
+                            <div class="concerts__button-wrapper">
+                                <button class="button">Buy a ticket</button>
+                            </div>
                         </header>
                     </article>
                     <article class="concerts__item">
                         <img class="concerts__image" src="./images/band03_WiechnikMarcin.jpg" alt="Image of band vocalist and keyboard player during a concert" />
                         <header class="concerts__info">
-                            <p class="concerts__date">20.12.2018</p>
-                            <p class="concerts__location">Lublin, klub XXX</p>
-                            <button class="button">Buy a ticket</button>
+                            <div class="concerts__date-wrapper">
+                                <p class="concerts__date">20.12.2018</p>
+                                <p class="concerts__location">Lublin, klub XXX</p>
+                            </div>
+                            <div class="concerts__button-wrapper">
+                                <button class="button">Buy a ticket</button>
+                            </div>
                         </header>
                     </article>
                     <article class="concerts__item">
                         <img class="concerts__image" src="./images/band04_JakubBodys.jpg" alt="Image of band keyboard player during a concert" />
                         <header class="concerts__info">
-                            <p class="concerts__date">20.12.2018</p>
-                            <p class="concerts__location">Lublin, klub XXX</p>
-                            <button class="button">Buy a ticket</button>
+                            <div class="concerts__date-wrapper">
+                                <p class="concerts__date">20.12.2018</p>
+                                <p class="concerts__location">Lublin, klub XXX</p>
+                            </div>
+                            <div class="concerts__button-wrapper">
+                                <button class="button">Buy a ticket</button>
+                            </div>
                         </header>
                     </article>
                     <article class="concerts__item">
                         <img class="concerts__image" src="./images/band05_JakubBodys.jpg" alt="Image of band vocalist during a concert" />
                         <header class="concerts__info">
-                            <p class="concerts__date">20.12.2018</p>
-                            <p class="concerts__location">Lublin, klub XXX</p>
-                            <button class="button">Buy a ticket</button>
+                            <div class="concerts__date-wrapper">
+                                <p class="concerts__date">20.12.2018</p>
+                                <p class="concerts__location">Lublin, klub XXX</p>
+                            </div>
+                            <div class="concerts__button-wrapper">
+                                <button class="button">Buy a ticket</button>
+                            </div>
                         </header>
                     </article>
                 </div>
@@ -164,26 +180,28 @@
                     </li>
                 </ul>
             </section>
-            <section id="contact" class="content-section">
+            <section id="contact" class="content-section contact-section">
                 <h2 class="content-section__header">Contact</h2>
-                <img class="gallery__image" src="./images/band12.jpg" alt="Image of band members posing next to a train" />
-                <address>
-                    Tel: 123 456 789<br/>
-                    E-mail: 6bmmusic@gmail.com
-                </address>
-                <form class="form">
-                    <div class="form__field">
-                        <label class="form__label" for="email">E-mail</label>
-                        <input class="form__input" type="email" name="email" id="email" required />
-                    </div>
-                    <div class="form__field">
-                        <label class="form__label" for="topic">Topic</label>
-                        <input class="form__input" type="text" name="topic" id="topic" required />
-                    </div>
-                    <div class="form__field">
-                        <button class="button" type="submit">Contact us!</button>
-                    </div>
-                </form>
+                <div class="contact-section__info">
+                    <img class="contact-section__image" src="./images/band12.jpg" alt="Image of band members posing next to a train" />
+                    <address class="contact-section__adress">
+                        Tel: 123 456 789<br/>
+                        E-mail: 6bmmusic@gmail.com
+                    </address>
+                    <form class="form">
+                        <div class="form__field">
+                            <label class="form__label" for="email">E-mail</label>
+                            <input class="form__input" type="email" name="email" id="email" required />
+                        </div>
+                        <div class="form__field">
+                            <label class="form__label" for="topic">Topic</label>
+                            <input class="form__input" type="text" name="topic" id="topic" required />
+                        </div>
+                        <div class="form__button">
+                            <button class="button" type="submit">Contact us!</button>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
         <footer class="page-footer">
@@ -195,16 +213,16 @@
             <h2 class="screen-reader-only">Social media links</h2>
             <ul class="social-links">
                 <li class="social-links__item">
-                    <a class="social-links__link" href="http://facebook.com/">Facebook</a>
+                    <a class="social-links__link" href="http://facebook.com/"><img class="social-links__photo" src="images/fb.svg" alt="facebook logo"></a>
                 </li>
                 <li class="social-links__item">
-                    <a class="social-links__link" href="http://instagram.com/">Instagram</a>
+                    <a class="social-links__link" href="http://instagram.com/"><img class="social-links__photo" src="images/insta.svg" alt="instagram logo"></a>
                 </li>
                 <li class="social-links__item">
-                    <a class="social-links__link" href="http://last.fm/">Last.fm</a>
+                    <a class="social-links__link" href="http://last.fm/"><img class="social-links__photo" src="images/last.svg" alt="last fm logo"></a>
                 </li>
                 <li class="social-links__item">
-                    <a class="social-links__link" href="http://youtube.com/">Youtube</a>
+                    <a class="social-links__link" href="http://youtube.com/"><img class="social-links__photo" src="images/yout.svg" alt="youtube logo"></a>
                 </li>
             </ul>
         </footer>
